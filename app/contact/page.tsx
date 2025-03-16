@@ -2,6 +2,9 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { sendMail } from '@/lib/send-mail';
+import { toast } from 'sonner';
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -18,13 +21,24 @@ export default function Contact() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData)
+    const response = await sendMail({
+      email: formData.email,
+      subject: formData.name + 'New Contact Us Form',
+      text: formData.message,
+    });
+    if (response?.messageId) {
+      toast.success('Application Submitted Successfully.');
+    } else {
+      toast.error('Failed To send application.');
+    }
     // Reset form after submission
     setFormData({ name: '', email: '', message: '' })
   }
+  
 
   return (
     <div className="container mx-auto px-6 py-12">

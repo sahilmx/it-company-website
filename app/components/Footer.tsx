@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
-            <h3 className="text-xl font-bold mb-2">TechNova Solutions</h3>
+            <h3 className="text-xl font-bold mb-2">DeepFlow Consulting</h3>
             <p className="text-gray-400">Innovating for a digital future</p>
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
@@ -21,9 +21,9 @@ const Footer = () => {
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-2">Contact Us</h4>
-            <p className="text-gray-400">123 Tech Street, Silicon Valley, CA 94000</p>
-            <p className="text-gray-400">Phone: (123) 456-7890</p>
-            <p className="text-gray-400">Email: info@technova.com</p>
+            <p className="text-gray-400">Delhi , India </p>
+            <p className="text-gray-400">Email 1 : sahil.yadav1211@gmail.com</p>
+            <p className="text-gray-400">Email 2 : ankr2063@gmail.com</p>
           </div>
           <div className="w-full md:w-1/4">
             <h4 className="text-lg font-semibold mb-2">Follow Us</h4>
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
-          © 2023 TechNova Solutions. All rights reserved.
+          © 2023 DeepFlow Consulting. All rights reserved.
         </div>
       </div>
     </footer>
