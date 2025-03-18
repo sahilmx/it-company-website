@@ -7,7 +7,7 @@ const projects = [
   {
     title: 'Rideforyou Transport',
     description: 'A transportation solution with mobile apps and backend services.',
-    image: 'https://image.freepik.com/free-photo/transportation-travel-vehicle-concept_11971773.htm', // Replace with actual image URL from Freepik
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Flutter', 'React', 'Pocketbase', 'MongoDB', 'Firebase', 'Node.js', 'Express'],
     links: [
       'https://apps.apple.com/in/app/rideforyoutransport/id6505006863'
@@ -15,15 +15,15 @@ const projects = [
   },
   {
     title: 'Tyro',
-    description: 'A Fitness Platform along with a fitness device called smart mirror.',
-    image: 'https://image.freepik.com/free-photo/young-people-working-out-healthy-lifestyle_12443083.htm', // Replace with actual image URL from Freepik
+    description: 'An Fitness Platform along with a fitness device called smart mirror.',
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['React', 'Android Native', 'WebFlow', 'Node.js', 'Express', 'PostgreSQL'],
   },
   
   {
     title: 'Brskly',
     description: 'A platform offering mobile app solutions for businesses and customers.',
-    image: 'https://image.freepik.com/free-photo/business-people-working-office_11516811.htm', // Replace with actual image URL from Freepik
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Flutter', 'Android Native'],
     links: [
       'https://play.google.com/store/apps/details?id=co.brskly.cube8&pcampaignid=web_share',
@@ -33,7 +33,7 @@ const projects = [
   {
     title: 'TenFold',
     description: 'An educational app for managing and delivering courses.',
-    image: 'https://image.freepik.com/free-photo/student-hands-working-with-digital-tablet_8925720.htm', // Replace with actual image URL from Freepik
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Android Native'],
     links: [
       'https://play.google.com/store/apps/details?id=com.tenfold.edu&pcampaignid=web_share'
@@ -42,13 +42,13 @@ const projects = [
   {
     title: 'Rekovar Healthcare',
     description: 'A healthcare mobile solution for better management of health-related data.',
-    image: 'https://image.freepik.com/free-photo/young-people-hands-healthcare-medical_12452089.htm', // Replace with actual image URL from Freepik
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Android Native'],
   },
   {
     title: 'StudyBharat',
     description: 'A mobile app to help students with educational resources and tools.',
-    image: 'https://image.freepik.com/free-photo/education-learn-online-concept_12471182.htm', // Replace with actual image URL from Freepik
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Android Native'],
     links: [
       'https://play.google.com/store/apps/details?id=com.study.bharat&pcampaignid=web_share'
@@ -57,13 +57,13 @@ const projects = [
   {
     title: 'dQuiz',
     description: 'A quiz app with real-time data handling and analytics.',
-    image: 'https://image.freepik.com/free-photo/quiz-competition_12243456.htm', // Replace with actual image URL from Freepik
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['React', 'Node.js', 'Express', 'MongoDB'],
   },
   {
     title: 'Genpass',
     description: 'A password generation tool with a simple, user-friendly interface.',
-    image: 'https://image.freepik.com/free-photo/hand-keypad_11701017.htm', // Replace with actual image URL from Freepik
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['React'],
     links: [
       'https://sahilmx.github.io/generatepass/'
@@ -72,7 +72,7 @@ const projects = [
   {
     title: 'Edutracker',
     description: 'An app for tracking educational progress and activities.',
-    image: 'https://image.freepik.com/free-photo/education-concept_11150248.htm', // Replace with actual image URL from Freepik
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Android Native'],
     links: [
       'https://play.google.com/store/apps/details?id=in.digitaldreamssystems.edutracker&pcampaignid=web_share'
@@ -81,19 +81,19 @@ const projects = [
   {
     title: 'Construction Process Automation Platform',
     description: 'A platform that helps builders plan, deploy, track, and manage construction projects.',
-    image: 'https://image.freepik.com/free-photo/construction-site_10555120.htm', // Replace with actual image URL from Freepik
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Java', 'MySQL', 'GCP', 'AWS'],
   },
   {
     title: 'Online Learning Platform',
     description: 'An online learning platform with live classes, mock test papers, daily quizzes, and news updates for competitive exam preparation.',
-    image: 'https://image.freepik.com/free-photo/online-education_10714948.htm', // Replace with actual image URL from Freepik
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Golang', 'MongoDB'],
   },
   {
     title: 'Home Komforts',
     description: 'Offers modular furniture, home furnishings, accessories, and mattresses.',
-    image: 'https://image.freepik.com/free-photo/interior-design-modern-living-room_12568592.htm', // Replace with actual image URL from Freepik
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Golang', 'PostgreSQL', 'MongoDB'],
     links: [
       'https://www.homekomforts.com/'
@@ -102,7 +102,7 @@ const projects = [
   {
     title: 'Kurlon',
     description: 'A company providing a wide range of mattresses and pillows.',
-    image: 'https://image.freepik.com/free-photo/comfortable-mattress-bedroom_11847863.htm', // Replace with actual image URL from Freepik
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Golang', 'MySQL'],
     links: [
       'https://kurlon.com/'
@@ -111,7 +111,7 @@ const projects = [
   {
     title: 'The AutoParts Shop',
     description: 'Distributes auto parts across 48 states in the US, ensuring product durability and compatibility.',
-    image: 'https://image.freepik.com/free-photo/car-parts-tools_10512268.htm', // Replace with actual image URL from Freepik
+    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Node.js', 'Golang', 'MongoDB'],
     links: [
       'https://www.theautopartsshop.com/'
