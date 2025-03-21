@@ -3,23 +3,23 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-const teamMembers = [
-  {
-    name: 'Ankit Kumar',
-    role: 'Android Developer',
-    image: '/ankit.jpeg?height=200&width=200',
-  },
-  {
-    name: 'Sahil Yadav',
-    role: 'FullStack Engineer',
-    image: '/sahil.png?height=200&width=200',
-  },
-  {
-    name: 'Neeraj Kumar',
-    role: 'Backend Developer',
-    image: '/neeraj.jpeg?height=200&width=200',
-  }
-]
+// const teamMembers = [
+//   {
+//     name: 'Ankit Kumar',
+//     role: 'Android Developer',
+//     image: '/ankit.jpeg?height=200&width=200',
+//   },
+//   {
+//     name: 'Sahil Yadav',
+//     role: 'FullStack Engineer',
+//     image: '/sahil.png?height=200&width=200',
+//   },
+//   {
+//     name: 'Neeraj Kumar',
+//     role: 'Backend Developer',
+//     image: '/neeraj.jpeg?height=200&width=200',
+//   }
+// ]
 
 export default function About() {
   return (
@@ -70,7 +70,7 @@ export default function About() {
         </p>
       </motion.section>
 
-      <motion.section
+      {/* <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.5 }}
@@ -97,7 +97,7 @@ export default function About() {
             </motion.div>
           ))}
         </div>
-      </motion.section>
+      </motion.section> */}
     </div>
   )
 }
