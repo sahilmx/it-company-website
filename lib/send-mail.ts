@@ -22,7 +22,7 @@ export async function sendMail({
   text,
   html,
 }: {
-  email: string;
+  email?: string;
   sendTo?: string;
   subject: string;
   text: string;
@@ -35,13 +35,12 @@ export async function sendMail({
     return;
   }
   const info = await transporter.sendMail({
-    from: email,
-    to: sendTo || SITE_MAIL_RECIEVER,
+    to: sendTo || ["ankr2063@gmail.com", "sahil.yadav1211@gmail.com"],
     subject: subject,
     text: text,
     html: html ? html : '',
   });
   console.log('Message Sent', info.messageId);
-  console.log('Mail sent to', SITE_MAIL_RECIEVER);
+  console.log('Mail sent');
   return info;
 }

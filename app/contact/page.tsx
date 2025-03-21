@@ -3,14 +3,16 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { sendMail } from '@/lib/send-mail';
-import { toast } from 'sonner';
+import { Toaster, toast } from 'sonner';
 
 
 export default function Contact() {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
+    number: ''
   })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -25,23 +27,27 @@ export default function Contact() {
     e.preventDefault()
     // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData)
+    setLoading(true);
     const response = await sendMail({
-      email: formData.email,
-      subject: formData.name + 'New Contact Us Form',
-      text: formData.message,
+      //email: formData.email,
+      subject: 'New Contact Us Form - DeepFlow',
+      text: formData.message + "\nEmail: " + formData.email + "\nMobile Number: " + formData.number,
     });
     if (response?.messageId) {
-      toast.success('Application Submitted Successfully.');
+      console.log(response?.messageId);
+      toast.success('Submitted Successfully.');
     } else {
       toast.error('Failed To send application.');
     }
+    setLoading(false);
     // Reset form after submission
-    setFormData({ name: '', email: '', message: '' })
+    setFormData({ name: '', email: '', message: '', number: '' })
   }
-  
+
 
   return (
     <div className="container mx-auto px-6 py-12">
+      <Toaster position="top-right" richColors />
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -69,7 +75,7 @@ export default function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
             />
           </div>
           <div>
@@ -83,7 +89,22 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
+            />
+          </div>
+          <div>
+            <label htmlFor="number" className="block text-sm font-medium text-gray-700">
+              Number
+            </label>
+            <input
+              type=""
+              id="number"
+              name="number"
+              maxLength={10}
+              value={formData.number}
+              onChange={handleChange}
+              required
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
             />
           </div>
           <div>
@@ -97,7 +118,7 @@ export default function Contact() {
               value={formData.message}
               onChange={handleChange}
               required
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
             ></textarea>
           </div>
           <div>
@@ -105,7 +126,33 @@ export default function Contact() {
               type="submit"
               className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
-              Send Message
+              {loading ? (
+                <>
+                  <svg
+                    className="animate-spin h-5 w-5 mr-2 text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    />
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8v8H4z"
+                    />
+                  </svg>
+                  Submitting...
+                </>
+              ) : (
+                "Submit"
+              )}
             </button>
           </div>
         </motion.form>
