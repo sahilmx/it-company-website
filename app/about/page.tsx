@@ -30,10 +30,10 @@ export default function About() {
       transition={{ duration: 0.5 }}
       className="mb-16"
     >
-      <h1 className="text-4xl text-center font-bold mb-8">About Deepflow Consulting</h1>
+      <h1 className="text-4xl text-center font-bold mb-8">About Trexx Ai</h1>
       
       <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-        At <strong>Deepflow Consulting</strong>, we are committed to helping businesses harness the power of technology to unlock new opportunities, streamline operations, and fuel innovation. As a leading tech consulting firm with <strong>8 years of experience</strong>, we specialize in providing cutting-edge solutions designed to meet the unique needs of each organization we work with. Our team of expert consultants is dedicated to guiding businesses through the complexities of modern technology, ensuring they stay competitive in today’s fast-paced digital world.
+        At <strong>Trexx Ai</strong>, we are committed to helping businesses harness the power of technology to unlock new opportunities, streamline operations, and fuel innovation. As a leading tech consulting firm with <strong>8 years of experience</strong>, we specialize in providing cutting-edge solutions designed to meet the unique needs of each organization we work with. Our team of expert consultants is dedicated to guiding businesses through the complexities of modern technology, ensuring they stay competitive in today’s fast-paced digital world.
       </p>
       
       <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-4">
@@ -50,7 +50,7 @@ export default function About() {
       </ul>
 
       <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-4">
-        At <strong>Deepflow Consulting</strong>, we don’t just solve problems; we foster lasting partnerships built on trust and results. Let us help you leverage technology to its fullest potential and drive long-term success.
+        At <strong>Trexx Ai</strong>, we don’t just solve problems; we foster lasting partnerships built on trust and results. Let us help you leverage technology to its fullest potential and drive long-term success.
       </p>
 
       <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-4">

@@ -7,7 +7,7 @@ const projects = [
   {
     title: 'Rideforyou Transport',
     description: 'A transportation solution with mobile apps and backend services.',
-    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
+    image: '/rideforyou.png?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Flutter', 'React', 'Pocketbase', 'MongoDB', 'Firebase', 'Node.js', 'Express'],
     links: [
       'https://apps.apple.com/in/app/rideforyoutransport/id6505006863'
@@ -16,14 +16,14 @@ const projects = [
   {
     title: 'Tyro',
     description: 'An Fitness Platform along with a fitness device called smart mirror.',
-    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
+    image: '/tyro.jpg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['React', 'Android Native', 'WebFlow', 'Node.js', 'Express', 'PostgreSQL'],
   },
   
   {
     title: 'Brskly',
     description: 'A platform offering mobile app solutions for businesses and customers.',
-    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
+    image: '/brskly.jpg?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Flutter', 'Android Native'],
     links: [
       'https://play.google.com/store/apps/details?id=co.brskly.cube8&pcampaignid=web_share',
@@ -33,7 +33,7 @@ const projects = [
   {
     title: 'TenFold',
     description: 'An educational app for managing and delivering courses.',
-    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
+    image: '/tenfold.png?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Android Native'],
     links: [
       'https://play.google.com/store/apps/details?id=com.tenfold.edu&pcampaignid=web_share'
@@ -48,7 +48,7 @@ const projects = [
   {
     title: 'StudyBharat',
     description: 'A mobile app to help students with educational resources and tools.',
-    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
+    image: '/studybharat.png?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['Android Native'],
     links: [
       'https://play.google.com/store/apps/details?id=com.study.bharat&pcampaignid=web_share'
@@ -63,7 +63,7 @@ const projects = [
   {
     title: 'Genpass',
     description: 'A password generation tool with a simple, user-friendly interface.',
-    image: '/placeholder.svg?height=300&width=400', // Replace with actual image or project screenshot
+    image: '/genpass.png?height=300&width=400', // Replace with actual image or project screenshot
     tags: ['React'],
     links: [
       'https://sahilmx.github.io/generatepass/'
